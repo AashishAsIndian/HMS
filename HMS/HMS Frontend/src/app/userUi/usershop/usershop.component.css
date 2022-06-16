@@ -1,0 +1,17 @@
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #d2ced340;
+    text-align: center;
+  }
+  h4 {
+    font: lucida;
+  }
+  

@@ -1,0 +1,95 @@
+
+<header>
+    <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <div><a href="/userUI" class="navbar-brand"
+		style="color:rgb(8, 125, 220)  ; font-size: x-large; font-weight: bolder;"><b>Grand Hotel</b></a></div>
+        <ul class="navbar-nav">
+		<b> <li><a  class="nav-link" routerLink="/userUI/shop"  >Gallery</a></li></b>
+          <b>  <li><a  class="nav-link" routerLink="/userUI/booking"  >Bookings</a></li></b>
+            
+           
+        </ul> &nbsp; 
+        <ul class="navbar-nav">
+		<b>  <a routerLink="/login">Log Out</a></b>
+          </ul>
+    </nav>
+</header>
+
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<title>Booking Form HTML Template</title>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+	<link type="text/css" rel="stylesheet" href="userbooking.component.css" />
+
+
+
+</head>
+
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-md-push-5">
+						<div class="booking-cta">
+						<b><h1>Reservation</h1></b>
+							
+						</div>
+					</div>
+					<div class="col-md-4 col-md-pull-7">
+						<div class="booking-form">
+							<form  #BookTables="ngForm" (ngSubmit)="bookTables()">
+								<div class="form-group">
+								<b><span class="form-label">Your Name</span></b>
+									<input type="text" class="form-control" id="name" placeholder="Enter your name" name="name" [(ngModel)]="booking.name">
+								</div>
+								<div class="form-group">
+								<b><span class="form-label">Mobile Number</span></b>
+                  <input type="text" class="form-control" id="mob" placeholder="Enter your mobile number" name="mob" [(ngModel)]="booking.mobileNumber">
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="form-group">
+										<b><span class="form-label">Date</span></b>
+                      <input type="date" class="form-control" id="dt" placeholder="Enter booking date" name="dt" [(ngModel)]="booking.date">
+										</div>
+									</div>
+							
+										<div class="col-sm-6">
+											<div class="form-group">
+											<b><span class="form-label">Room</span></b>
+                        <input type="" class="form-control" id="set" placeholder="No. of Rooms" name="set" [(ngModel)]="booking.seats">
+												
+											</div>
+									
+								</div>
+								
+									
+								</div>
+								<div class="form-btn">
+									<button class="submit-btn" type="submit" >Book Room</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    background: #68a2f8;
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(37, 123, 244, 0.486), rgba(228, 117, 13, 0.404));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to bottom, rgba(172, 199, 239, 0.779), rgba(234, 159, 244, 0.621))
+    }
+    .gradient-form{
+        width: 200%;
+        padding: 9.15%;
+        background-image: 
+        linear-gradient(to top, rgba(100, 156, 241, 0.779), rgba(228, 108, 244, 0.73)),
+        url('/assets/images/image2.jpg');
+      }
+    
